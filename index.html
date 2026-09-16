@@ -1,41 +1,196 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saúde Prime | Logística Hospitalar</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700;900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-    <title>Amigo Secreto</title>
 </head>
-
 <body>
-    <main class="main-content">
-        <header class="header-banner">
-            <h1 class="main-title">Amigo Secreto</h1>
-            <img src="assets/amigo-secreto.png" alt="Imagem representativa de amigo secreto">
-        </header>
-        
-        <section class="input-section">
-            <h2 class="section-title">Digite o nome dos seus amigos</h2>
-            <div class="input-wrapper">
-                <input type="text" id="amigo" class="input-name" placeholder="Digite um nome">
-                <button class="button-add" onclick="adicionarAmigo()">Adicionar</button>
+    <header>
+        <nav>
+            <div class="logo">SAÚDE <span>PRIME</span></div>
+            <div class="nav-links">
+                <a href="#inicio">Início</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#produtos">Produtos</a>
+                <a href="#diferenciais">Diferenciais</a>
+                <a href="#contato">Contato</a>
             </div>
-           
-            <ul id="listaAmigos" class="name-list" aria-labelledby="listaAmigos" role="list"></ul>
-            <ul id="resultado" class="result-list" aria-live="polite"></ul>
+        </nav>
+    </header>
 
-            <div class="button-container">
-                <button class="button-draw" onclick="sortearAmigo()" aria-label="Sortear amigo secreto">
-                    <img src="assets/play_circle_outline.png" alt="Ícone para sortear">
-                    Sortear amigo
-                </button>
+    <main>
+        <section class="hero" id="inicio">
+            <div class="hero-content">
+                <div class="hero-copy">
+                    <span class="eyebrow">Suprindo a saúde com eficiência</span>
+                    <h1>Logística hospitalar com segurança, agilidade e confiança.</h1>
+                    <p>Soluções em produtos e logística para hospitais, clínicas, laboratórios e profissionais da saúde.</p>
+                    <a class="btn" href="#produtos">Conheça nossos produtos</a>
+                </div>
+                <div class="hero-visual">
+                    <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?auto=format&fit=crop&w=900&q=80" alt="Logística hospitalar com materiais médicos em estoque">
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre" class="info-section">
+            <div class="title">
+                <h2>Sobre a Saúde Prime</h2>
+                <p>Conectando saúde, eficiência e qualidade.</p>
+            </div>
+            <div class="about">
+                <div class="box">
+                    <h3>Quem somos</h3>
+                    <p>A Saúde Prime nasceu em 2023, criada por cinco amigos apaixonados pelo universo hospitalar e pela logística. A empresa atua com transporte, armazenamento e distribuição de produtos para a área da saúde.</p>
+                </div>
+                <div class="box">
+                    <h3>Nosso propósito</h3>
+                    <p>Oferecer soluções logísticas ágeis, seguras e eficientes, contribuindo para que produtos e insumos cheguem ao destino com qualidade e pontualidade.</p>
+                </div>
+            </div>
+            <div class="photo-strip">
+                <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1200&q=80" alt="Equipe hospitalar e atendimento de saúde">
+            </div>
+        </section>
+
+        <section id="produtos">
+            <div class="title">
+                <h2>Produtos</h2>
+                <p>Confira alguns itens do nosso portfólio.</p>
+            </div>
+            <div class="grid">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="icon">PFF</div>
+                        <h3>Máscara PFF</h3>
+                        <p>Caixa com 50 unidades.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="icon">Monitor</div>
+                        <h3>Oxímetro de Pulso</h3>
+                        <p>Equipamento portátil para monitoramento.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="icon">Mobilidade</div>
+                        <h3>Cadeira de Rodas</h3>
+                        <p>Modelo hospitalar padrão.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="icon">Emergência</div>
+                        <h3>Kit Primeiros Socorros</h3>
+                        <p>Kit completo básico.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="icon">Proteção</div>
+                        <h3>Avental TNT</h3>
+                        <p>Uso hospitalar descartável.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="icon">Suprimento</div>
+                        <h3>Materiais Hospitalares</h3>
+                        <p>Itens para apoio, proteção, diagnóstico e coleta.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="diferenciais">
+            <div class="title">
+                <h2>Nossos diferenciais</h2>
+                <p>Eficiência em cada etapa da operação.</p>
+            </div>
+            <div class="grid grid-secondary">
+                <div class="card feature-card">
+                    <div class="icon">Entrega</div>
+                    <h3>Entrega rápida</h3>
+                    <p>Pontualidade e eficiência nas entregas.</p>
+                </div>
+                <div class="card feature-card">
+                    <div class="icon">Rastreio</div>
+                    <h3>Rastreabilidade</h3>
+                    <p>Controle das cargas e dos produtos.</p>
+                </div>
+                <div class="card feature-card">
+                    <div class="icon">Segurança</div>
+                    <h3>Segurança</h3>
+                    <p>Cuidado com os materiais e operações.</p>
+                </div>
+                <div class="card feature-card">
+                    <div class="icon">Tecnologia</div>
+                    <h3>Tecnologia</h3>
+                    <p>Rastreamento e controle por código de barras.</p>
+                </div>
+                <div class="card feature-card">
+                    <div class="icon">Atendimento</div>
+                    <h3>Atendimento especializado</h3>
+                    <p>Relacionamento próximo com o setor da saúde.</p>
+                </div>
+                <div class="card feature-card">
+                    <div class="icon">Qualidade</div>
+                    <h3>Excelência</h3>
+                    <p>Compromisso com qualidade e confiabilidade.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mission-section">
+            <div class="title">
+                <h2>Missão, Visão e Valores</h2>
+            </div>
+            <div class="about about-compact">
+                <div class="box">
+                    <h3>Missão</h3>
+                    <p>Garantir soluções logísticas ágeis, seguras e eficientes para o setor hospitalar.</p>
+                </div>
+                <div class="box">
+                    <h3>Visão</h3>
+                    <p>Ser reconhecida nacionalmente como referência em logística hospitalar até 2030.</p>
+                </div>
+            </div>
+            <div class="values">
+                <div class="value"><b>Compromisso</b><br>com a saúde</div>
+                <div class="value"><b>Excelência</b></div>
+                <div class="value"><b>Inovação</b></div>
+                <div class="value"><b>Ética e transparência</b></div>
+            </div>
+        </section>
+
+        <section id="contato">
+            <div class="contact contact-clean">
+                <div class="contact-copy">
+                    <h2>Entre em contato</h2>
+                    <p>Saúde Prime — Logística e produtos hospitalares</p>
+                    <p>🌐 Website: https://www.saudeprime.com</p>
+                    <p>📱 WhatsApp: (XX) XXXXX-XXXX</p>
+                    <p>📧 E-mail: contato@saudeprime.com</p>
+                    <p>📍 Rio de Janeiro – RJ</p>
+                    <br>
+                    <a class="btn" href="https://www.saudeprime.com" target="_blank" rel="noopener noreferrer">Visite o site</a>
+                </div>
+                <div class="hospital-card">
+                    <span class="hospital-tag">Atendimento hospitalar</span>
+                    <strong>Suprimento e logística para saúde</strong>
+                    <p>Entrega segura, rastreada e eficiente para clínicas, hospitais e laboratórios.</p>
+                </div>
             </div>
         </section>
     </main>
 
-    <script src="app.js" defer></script>
+    <footer>
+        <p>© 2026 Saúde Prime — Logística Hospitalar</p>
+    </footer>
 </body>
 </html>
+
